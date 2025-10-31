@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/GitHub/07-routing-nextjs/app/notes/filter/%5B...slug%5D/page.tsx"],"sourcesContent":["interface Props {\n  params: Promise<{ slug: string[] }>;\n}\n\nexport default async function FilterPage({ params }: Props) {\n  const { slug } = await params;\n  const currentTag = slug?.[0] || \"all\";\n\n  return (\n    <>\n      <h2>Notes filtered by: {currentTag}</h2>\n      <p>Here you can show notes filtered by {currentTag}.</p>\n    </>\n  );\n}"],"names":[],"mappings":";;;;;;AAIe,eAAe,WAAW,EAAE,MAAM,EAAS;IACxD,MAAM,EAAE,IAAI,EAAE,GAAG,MAAM;IACvB,MAAM,aAAa,MAAM,CAAC,EAAE,IAAI;IAEhC,qBACE;;0BACE,8OAAC;;oBAAG;oBAAoB;;;;;;;0BACxB,8OAAC;;oBAAE;oBAAqC;oBAAW;;;;;;;;;AAGzD","debugId":null}}]
+}

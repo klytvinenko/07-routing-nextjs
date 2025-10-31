@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/GitHub/07-routing-nextjs/app/notes/filter/layout.tsx"],"sourcesContent":["type Props = {\n  children: React.ReactNode;\n  sidebar: React.ReactNode;\n};\n\nexport default function NotesLayout({ children, sidebar }: Props) {\n  return (\n    <section\n      style={{\n        display: \"flex\",\n        alignItems: \"flex-start\",\n        gap: \"20px\",\n        padding: \"20px\",\n      }}\n    >\n      <aside\n        style={{\n          width: \"250px\",\n          background: \"#f4f4f4\",\n          padding: \"10px\",\n          borderRadius: \"8px\",\n        }}\n      >\n        {sidebar}\n      </aside>\n\n      <main style={{ flex: 1 }}>{children}</main>\n    </section>\n\n  );\n}\n"],"names":[],"mappings":";;;;;;AAKe,SAAS,YAAY,EAAE,QAAQ,EAAE,OAAO,EAAS;IAC9D,qBACE,8OAAC;QACC,OAAO;YACL,SAAS;YACT,YAAY;YACZ,KAAK;YACL,SAAS;QACX;;0BAEA,8OAAC;gBACC,OAAO;oBACL,OAAO;oBACP,YAAY;oBACZ,SAAS;oBACT,cAAc;gBAChB;0BAEC;;;;;;0BAGH,8OAAC;gBAAK,OAAO;oBAAE,MAAM;gBAAE;0BAAI;;;;;;;;;;;;AAIjC","debugId":null}}]
+}

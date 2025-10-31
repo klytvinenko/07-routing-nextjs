@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/GitHub/07-routing-nextjs/app/notes/filter/%40sidebar/default.tsx"],"sourcesContent":["// app/notes/filter/@sidebar/default.tsx\n\nconst NotesSidebar = async () => {\n  return <div>NotesSidebar</div>;\n};\n\nexport default NotesSidebar;\n\n"],"names":[],"mappings":"AAAA,wCAAwC;;;;;;;AAExC,MAAM,eAAe;IACnB,qBAAO,8OAAC;kBAAI;;;;;;AACd;uCAEe","debugId":null}}]
+}
