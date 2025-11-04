@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 38, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/GitHub/07-routing-nextjs/app/notes/filter/%40sidebar/default.tsx"],"sourcesContent":["export default function DefaultSidebar() {\n  return <div>Loading sidebar...</div>;\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBAAO,8OAAC;kBAAI;;;;;;AACd","debugId":null}}]
+    {"offset": {"line": 38, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/GitHub/07-routing-nextjs/app/notes/filter/%40sidebar/default.tsx"],"sourcesContent":["export default function SidebarDefault() {\n  console.log(\"⚪ Sidebar default rendered\");\n  return <div style={{ padding: \"10px\" }}>Loading sidebar...</div>;\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,QAAQ,GAAG,CAAC;IACZ,qBAAO,8OAAC;QAAI,OAAO;YAAE,SAAS;QAAO;kBAAG;;;;;;AAC1C","debugId":null}}]
 }

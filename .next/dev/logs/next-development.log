@@ -1,1 +1,14 @@
-[00:00:00.617] Server  LOG      ✓ Ready in 458ms
+[00:00:00.909] Server  LOG      ✓ Ready in 708ms
+[00:00:13.705] Server  LOG     AxiosError: Request failed with status code 404
+[00:00:29.069] Server  LOG      ✓ Compiled in 61ms
+[00:00:29.766] Server  LOG     AxiosError: Request failed with status code 404
+[00:00:29.777] Server  LOG     AxiosError: Request failed with status code 404
+[00:00:32.291] Server  LOG     AxiosError: Request failed with status code 404
+[00:00:36.581] Server  LOG     {}
+[00:00:36.582] Server  LOG     {}
+[00:08:31.916] Server  LOG     {}
+[00:08:31.918] Server  LOG     {}
+[00:09:47.370] Server  LOG     {}
+[00:09:47.370] Server  LOG     {}
+[00:09:49.283] Server  LOG     {}
+[00:09:49.283] Server  LOG     {}

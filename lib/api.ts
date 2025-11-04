@@ -10,7 +10,8 @@ export interface NoteListData {
 
 export const fetchNotes = async (
   search: string,
-  page: number
+  page: number,
+  tag?: string
 ): Promise<NoteListData> => {
   try {
     const res = await axios.get<NoteListData>(
@@ -21,12 +22,16 @@ export const fetchNotes = async (
           page,
           perPage: 12,
           sortBy: "created",
+          tag
         },
+        
         headers: {
           Authorization: `Bearer ${myKey}`,
         },
+        
       }
     );
+    
     const result = res.data;
     console.log(result);
     return result;

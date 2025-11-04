@@ -1,15 +1,20 @@
-interface Props {
+import NoteList from "@/components/NoteList/NoteList";
+import { fetchNotes } from "@/lib/api";
+
+interface FilterPageProps {
   params: Promise<{ slug: string[] }>;
 }
 
-export default async function FilterPage({ params }: Props) {
+const FilterPage = async ({ params }: FilterPageProps) => {
   const { slug } = await params;
-  const currentTag = slug?.[0] || "all";
+  const tag = slug?.[0]; //|| "all"
 
-  return (
-    <>
-      <h2>Notes filtered by: {currentTag}</h2>
-      <p>Here you can show notes filtered by {currentTag}.</p>
-    </>
-  );
-}
+  const responce = await fetchNotes("", 1, tag === "all" ? undefined : tag);
+  console.log(responce);
+  
+  
+  return <NoteList notes={responce.notes}/>;
+
+};
+
+export default FilterPage;

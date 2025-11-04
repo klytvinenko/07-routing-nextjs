@@ -1,8 +1,8 @@
 import Link from "next/link";
-import css from "./SidebarNotes.module.css";
+import css from './SidebarNotes.module.css'
 
 const SidebarNotes = () => {
-  const TAGS_API = ["Work", "Personal", "Shoping", "Todo"];
+  const TAGS_API = ["Work", "Personal", "Todo"];
 
   return (
     <ul className={css.menuList}>

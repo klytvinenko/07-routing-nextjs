@@ -1,31 +1,15 @@
-type Props = {
+type FilterLayoutProps = {
   children: React.ReactNode;
   sidebar: React.ReactNode;
 };
 
-export default function NotesLayout({ children, sidebar }: Props) {
+export default function Layout({ children, sidebar }: FilterLayoutProps) {
   return (
-    <section
-      style={{
-        display: "flex",
-        alignItems: "flex-start",
-        gap: "20px",
-        padding: "20px",
-      }}
-    >
-      <aside
-        style={{
-          width: "250px",
-          background: "#f4f4f4",
-          padding: "10px",
-          borderRadius: "8px",
-        }}
-      >
+  <section >
+      <aside >
         {sidebar}
       </aside>
-
-      <main style={{ flex: 1 }}>{children}</main>
+      <main >{children}</main>
     </section>
-
   );
 }
