@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { startTransition, useEffect, useState } from "react";
 import css from "./page.module.css";
 import { useQuery } from "@tanstack/react-query";
 import { useDebounce } from "use-debounce";
@@ -13,17 +13,29 @@ import Modal from "@/components/Modal/Modal";
 import { fetchNotes, NoteListData } from "@/lib/api";
 import Pagination from "@/components/Pagination/Pagination";
 
+interface NotesClientProps {
+  tag?: string;
+}
 
-const NotesClient = () => {
+const NotesClient = ({tag} : NotesClientProps) => {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
   const [isOpenModal, setIsOpenModal] = useState(false);
  const [debouncedSearch] = useDebounce(search, 500);
 
+//  useEffect (() => {
+//   if(tag) {
+//   setPage(1);
+//   }
+
+//  }, [tag])
+
+// зроблено з допомогою чату gpt, бо setPage(1) показував помилку
+
   const { data, isLoading } = useQuery<NoteListData>({
-    queryKey: ["notes", debouncedSearch, page],
-    queryFn: () => fetchNotes(debouncedSearch, page),
-    placeholderData: (previousData) => previousData,
+    queryKey: ["notes", debouncedSearch, page, tag],
+    queryFn: () => fetchNotes(debouncedSearch, page, tag === 'all' ? undefined : tag),
+    // placeholderData: (previousData) => previousData,
   });
   const notes = data?.notes ?? [];
   const total_pages = data?.totalPages ?? 0;

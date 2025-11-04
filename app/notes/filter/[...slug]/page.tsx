@@ -10,13 +10,13 @@ const FilterPage = async ({ params }: FilterPageProps) => {
   const { slug } = await params;
   const tag = slug?.[0]; //|| "all"
 
-  const responce = await fetchNotes("", 1, tag === "all" ? undefined : tag);
-  console.log(responce);
+  // const responce = await fetchNotes("", 1, tag === "all" ? undefined : tag);
+  // console.log(responce);
 
   return (
     <div>
-      <NotesClient/>
-      <NoteList notes={responce.notes} />
+      <NotesClient key={tag ?? "all"} tag={tag} />
+      {/* <NoteList notes={responce.notes} /> */}
     </div>
   );
 };
