@@ -1,5 +1,6 @@
 import NoteList from "@/components/NoteList/NoteList";
 import { fetchNotes } from "@/lib/api";
+import NotesClient from "../../Notes.client";
 
 interface FilterPageProps {
   params: Promise<{ slug: string[] }>;
@@ -11,10 +12,13 @@ const FilterPage = async ({ params }: FilterPageProps) => {
 
   const responce = await fetchNotes("", 1, tag === "all" ? undefined : tag);
   console.log(responce);
-  
-  
-  return <NoteList notes={responce.notes}/>;
 
+  return (
+    <div>
+      <NotesClient/>
+      <NoteList notes={responce.notes} />
+    </div>
+  );
 };
 
 export default FilterPage;
