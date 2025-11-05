@@ -109,6 +109,7 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/axios/lib/axios.js [app-ssr] (ecmascript)");
 ;
+//import { error } from "console";
 const myKey = ("TURBOPACK compile-time value", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx5dHZpbmVua28wMUBnbWFpbC5jb20iLCJpYXQiOjE3NjA0NDMzMjB9.WG1EvLMcBLV7NgZKvxi2vNu11oGTLikSbgTgGzQN1kQ");
 const fetchNotes = async (search, page, tag)=>{
     try {

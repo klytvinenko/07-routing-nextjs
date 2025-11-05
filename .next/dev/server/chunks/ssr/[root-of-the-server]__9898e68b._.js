@@ -37,8 +37,16 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/app/notes/filter/[...
 
 __turbopack_context__.n(__turbopack_context__.i("[project]/app/notes/filter/@sidebar/default.tsx [app-rsc] (ecmascript)"));
 }),
-"[project]/app/@modal/default.tsx [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/app/@modal/default.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
 
+__turbopack_context__.s([
+    "default",
+    ()=>Default
+]);
+function Default() {
+    return null;
+}
 }),
 "[project]/app/@modal/default.tsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
 
