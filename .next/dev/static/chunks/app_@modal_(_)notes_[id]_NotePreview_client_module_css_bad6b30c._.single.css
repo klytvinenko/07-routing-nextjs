@@ -1,5 +1,5 @@
-/* [project]/components/NotePreview/NotePreview.module.css [app-client] (css) */
-.NotePreview-module__6YN4eq__container {
+/* [project]/app/@modal/(.)notes/[id]/NotePreview.client.module.css [app-client] (css) */
+.NotePreview-client-module__grMHBW__container {
   background-color: #fff;
   border-radius: 8px;
   max-width: 800px;
@@ -8,13 +8,13 @@
   box-shadow: 0 4px 12px #0000000d;
 }
 
-.NotePreview-module__6YN4eq__item {
+.NotePreview-client-module__grMHBW__item {
   flex-direction: column;
   gap: 16px;
   display: flex;
 }
 
-.NotePreview-module__6YN4eq__header {
+.NotePreview-client-module__grMHBW__header {
   border-bottom: 1px solid #ddd;
   justify-content: space-between;
   align-items: center;
@@ -22,26 +22,26 @@
   display: flex;
 }
 
-.NotePreview-module__6YN4eq__header h2 {
+.NotePreview-client-module__grMHBW__header h2 {
   color: #333;
   margin: 0;
   font-size: 28px;
 }
 
-.NotePreview-module__6YN4eq__content {
+.NotePreview-client-module__grMHBW__content {
   color: #444;
   white-space: pre-wrap;
   font-size: 18px;
   line-height: 26px;
 }
 
-.NotePreview-module__6YN4eq__date {
+.NotePreview-client-module__grMHBW__date {
   color: #888;
   text-align: right;
   font-size: 14px;
 }
 
-.NotePreview-module__6YN4eq__tag {
+.NotePreview-client-module__grMHBW__tag {
   color: #0d6efd;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -55,7 +55,7 @@
   overflow: hidden;
 }
 
-.NotePreview-module__6YN4eq__backBtn {
+.NotePreview-client-module__grMHBW__backBtn {
   color: #000;
   cursor: pointer;
   background-color: #0000;
@@ -68,7 +68,7 @@
   display: inline-block;
 }
 
-.NotePreview-module__6YN4eq__backdrop {
+.NotePreview-client-module__grMHBW__backdrop {
   z-index: 1000;
   background-color: #21252999;
   justify-content: center;
@@ -81,7 +81,7 @@
   left: 0;
 }
 
-.NotePreview-module__6YN4eq__modal {
+.NotePreview-client-module__grMHBW__modal {
   background-color: #fff;
   border-radius: 8px;
   width: 100%;
@@ -91,4 +91,4 @@
   box-shadow: 0 5px 15px #0000004d;
 }
 
-/*# sourceMappingURL=components_NotePreview_NotePreview_module_css_bad6b30c._.single.css.map*/
+/*# sourceMappingURL=app_%40modal_%28_%29notes_%5Bid%5D_NotePreview_client_module_css_bad6b30c._.single.css.map*/

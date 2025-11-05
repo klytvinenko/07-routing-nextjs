@@ -21,11 +21,13 @@ module.exports = mod;
 
 __turbopack_context__.v({
   "backBtn": "NotePreview-module__6YN4eq__backBtn",
+  "backdrop": "NotePreview-module__6YN4eq__backdrop",
   "container": "NotePreview-module__6YN4eq__container",
   "content": "NotePreview-module__6YN4eq__content",
   "date": "NotePreview-module__6YN4eq__date",
   "header": "NotePreview-module__6YN4eq__header",
   "item": "NotePreview-module__6YN4eq__item",
+  "modal": "NotePreview-module__6YN4eq__modal",
   "tag": "NotePreview-module__6YN4eq__tag",
 });
 }),
@@ -330,6 +332,16 @@ const NotePreview = ({ id })=>{
     }, [
         router
     ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const originalHtmlOverflow = document.documentElement.style.overflow;
+        const originalBodyOverflow = document.body.style.overflow;
+        document.documentElement.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
+        return ()=>{
+            document.documentElement.style.overflow = originalHtmlOverflow;
+            document.body.style.overflow = originalBodyOverflow;
+        };
+    }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NotePreview$2f$NotePreview$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].backdrop,
         onClick: ()=>router.back(),
@@ -339,17 +351,17 @@ const NotePreview = ({ id })=>{
                 id: id
             }, void 0, false, {
                 fileName: "[project]/components/NotePreview/NotePreview.tsx",
-                lineNumber: 27,
+                lineNumber: 43,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/components/NotePreview/NotePreview.tsx",
-            lineNumber: 26,
+            lineNumber: 42,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/NotePreview/NotePreview.tsx",
-        lineNumber: 25,
+        lineNumber: 41,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

@@ -3,11 +3,13 @@
 
 __turbopack_context__.v({
   "backBtn": "NotePreview-module__6YN4eq__backBtn",
+  "backdrop": "NotePreview-module__6YN4eq__backdrop",
   "container": "NotePreview-module__6YN4eq__container",
   "content": "NotePreview-module__6YN4eq__content",
   "date": "NotePreview-module__6YN4eq__date",
   "header": "NotePreview-module__6YN4eq__header",
   "item": "NotePreview-module__6YN4eq__item",
+  "modal": "NotePreview-module__6YN4eq__modal",
   "tag": "NotePreview-module__6YN4eq__tag",
 });
 }),
@@ -306,12 +308,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 const NotePreview = (t0)=>{
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "8d77b92ca627e096b6ffdada2365fe2e27d66e18fa2a99a23270da3659e1d2ca") {
-        for(let $i = 0; $i < 11; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(12);
+    if ($[0] !== "0bc93290580ae29392c873d8555ccc6e633ee594891da06d69d1094177e071d6") {
+        for(let $i = 0; $i < 12; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "8d77b92ca627e096b6ffdada2365fe2e27d66e18fa2a99a23270da3659e1d2ca";
+        $[0] = "0bc93290580ae29392c873d8555ccc6e633ee594891da06d69d1094177e071d6";
     }
     const { id } = t0;
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
@@ -341,60 +343,78 @@ const NotePreview = (t0)=>{
     }
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t1, t2);
     let t3;
-    if ($[4] !== router) {
-        t3 = ()=>router.back();
-        $[4] = router;
-        $[5] = t3;
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = [];
+        $[4] = t3;
     } else {
-        t3 = $[5];
+        t3 = $[4];
     }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(_temp, t3);
     let t4;
-    if ($[6] !== id) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    if ($[5] !== router) {
+        t4 = ()=>router.back();
+        $[5] = router;
+        $[6] = t4;
+    } else {
+        t4 = $[6];
+    }
+    let t5;
+    if ($[7] !== id) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NotePreview$2f$NotePreview$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].modal,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$notes$2f5b$id$5d2f$NoteDetails$2e$client$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 id: id
             }, void 0, false, {
                 fileName: "[project]/components/NotePreview/NotePreview.tsx",
-                lineNumber: 56,
+                lineNumber: 64,
                 columnNumber: 37
             }, ("TURBOPACK compile-time value", void 0))
-        }, void 0, false, {
-            fileName: "[project]/components/NotePreview/NotePreview.tsx",
-            lineNumber: 56,
-            columnNumber: 10
-        }, ("TURBOPACK compile-time value", void 0));
-        $[6] = id;
-        $[7] = t4;
-    } else {
-        t4 = $[7];
-    }
-    let t5;
-    if ($[8] !== t3 || $[9] !== t4) {
-        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NotePreview$2f$NotePreview$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].backdrop,
-            onClick: t3,
-            children: t4
         }, void 0, false, {
             fileName: "[project]/components/NotePreview/NotePreview.tsx",
             lineNumber: 64,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[8] = t3;
+        $[7] = id;
+        $[8] = t5;
+    } else {
+        t5 = $[8];
+    }
+    let t6;
+    if ($[9] !== t4 || $[10] !== t5) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NotePreview$2f$NotePreview$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].backdrop,
+            onClick: t4,
+            children: t5
+        }, void 0, false, {
+            fileName: "[project]/components/NotePreview/NotePreview.tsx",
+            lineNumber: 72,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
         $[9] = t4;
         $[10] = t5;
+        $[11] = t6;
     } else {
-        t5 = $[10];
+        t6 = $[11];
     }
-    return t5;
+    return t6;
 };
-_s(NotePreview, "vQduR7x+OPXj6PSmJyFnf+hU7bg=", false, function() {
+_s(NotePreview, "TvQOAa6MuxS5wkANqefpxaThEc4=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
 _c = NotePreview;
 const __TURBOPACK__default__export__ = NotePreview;
+function _temp() {
+    const originalHtmlOverflow = document.documentElement.style.overflow;
+    const originalBodyOverflow = document.body.style.overflow;
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+    return ()=>{
+        document.documentElement.style.overflow = originalHtmlOverflow;
+        document.body.style.overflow = originalBodyOverflow;
+    };
+}
 var _c;
 __turbopack_context__.k.register(_c, "NotePreview");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {

@@ -717,6 +717,52 @@ __turbopack_context__.v({
 "[project]/components/Modal/Modal.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
+// 'use client'
+// import { useEffect } from "react";
+// //mport NoteForm from "../NoteForm/NoteForm";
+// import css from "./Modal.module.css";
+// import { createPortal } from "react-dom";
+// interface ModalProps {
+//   onClose: () => void;
+//   children: React.ReactNode;
+// }
+// const Modal = ({ onClose,children }: ModalProps) => {
+//   const handleBackdropClick = (
+//     event: React.MouseEvent<HTMLDivElement>
+//   ): void => {
+//     if (event.target === event.currentTarget) {
+//       onClose();
+//     }
+//   };
+//   useEffect(() => {
+//     const handleKeyDown = (event: KeyboardEvent) : void => {
+//       if(event.key === "Escape") {
+//         onClose();
+//       }
+//     }
+//     document.addEventListener('keydown' , handleKeyDown);
+//       const originalOverflow = document.body.style.overflow;
+//     document.body.style.overflow = "hidden";
+//     return () => {
+//       document.removeEventListener("keydown",handleKeyDown);
+//       document.body.style.overflow = originalOverflow;
+//     }
+//   }, [onClose])
+//   return createPortal(
+//     <div
+//       className={css.backdrop}
+//       role="dialog"
+//       aria-modal="true"
+//       onClick={handleBackdropClick}
+//     >
+//       <div className={css.modal}>
+//         {children}
+//       </div>
+//     </div>,
+//     document.getElementById("modal")!
+//   );
+// };
+// export default Modal;
 __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__
@@ -724,9 +770,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-//mport NoteForm from "../NoteForm/NoteForm";
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modal$2f$Modal$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/components/Modal/Modal.module.css [app-client] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2d$dom$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react-dom/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modal$2f$Modal$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/components/Modal/Modal.module.css [app-client] (css module)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
@@ -737,54 +782,62 @@ var _s = __turbopack_context__.k.signature();
 const Modal = (t0)=>{
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "06281c1ced0b8996eedc19fa663e4a03fee26fcd75d8d2c04cee443bde57f1ea") {
+    if ($[0] !== "a1ed10156bb5505236fa47dc56270a096794b86913b06b90b3880e5dcbcfe1f6") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "06281c1ced0b8996eedc19fa663e4a03fee26fcd75d8d2c04cee443bde57f1ea";
+        $[0] = "a1ed10156bb5505236fa47dc56270a096794b86913b06b90b3880e5dcbcfe1f6";
     }
     const { onClose, children } = t0;
+    const [mounted, setMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t1;
-    if ($[1] !== onClose) {
-        t1 = (event)=>{
-            if (event.target === event.currentTarget) {
-                onClose();
-            }
-        };
-        $[1] = onClose;
-        $[2] = t1;
-    } else {
-        t1 = $[2];
-    }
-    const handleBackdropClick = t1;
     let t2;
-    let t3;
-    if ($[3] !== onClose) {
-        t2 = ()=>{
-            const handleKeyDown = (event_0)=>{
-                if (event_0.key === "Escape") {
+    if ($[1] !== onClose) {
+        t1 = ()=>{
+            setMounted(true);
+            const handleKeyDown = (event)=>{
+                if (event.key === "Escape") {
                     onClose();
                 }
             };
             document.addEventListener("keydown", handleKeyDown);
-            const originalOverflow = document.body.style.overflow;
+            const html = document.documentElement;
+            const originalHtmlOverflow = html.style.overflow;
+            const originalBodyOverflow = document.body.style.overflow;
+            html.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
             return ()=>{
                 document.removeEventListener("keydown", handleKeyDown);
-                document.body.style.overflow = originalOverflow;
+                html.style.overflow = originalHtmlOverflow;
+                document.body.style.overflow = originalBodyOverflow;
             };
         };
-        t3 = [
+        t2 = [
             onClose
         ];
-        $[3] = onClose;
-        $[4] = t2;
+        $[1] = onClose;
+        $[2] = t1;
+        $[3] = t2;
+    } else {
+        t1 = $[2];
+        t2 = $[3];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t1, t2);
+    if (!mounted) {
+        return null;
+    }
+    let t3;
+    if ($[4] !== onClose) {
+        t3 = (e)=>{
+            if (e.target === e.currentTarget) {
+                onClose();
+            }
+        };
+        $[4] = onClose;
         $[5] = t3;
     } else {
-        t2 = $[4];
         t3 = $[5];
     }
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t2, t3);
     let t4;
     if ($[6] !== children) {
         t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -792,7 +845,7 @@ const Modal = (t0)=>{
             children: children
         }, void 0, false, {
             fileName: "[project]/components/Modal/Modal.tsx",
-            lineNumber: 65,
+            lineNumber: 124,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
         $[6] = children;
@@ -801,19 +854,19 @@ const Modal = (t0)=>{
         t4 = $[7];
     }
     let t5;
-    if ($[8] !== handleBackdropClick || $[9] !== t4) {
+    if ($[8] !== t3 || $[9] !== t4) {
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2d$dom$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createPortal"])(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modal$2f$Modal$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].backdrop,
             role: "dialog",
             "aria-modal": "true",
-            onClick: handleBackdropClick,
+            onClick: t3,
             children: t4
         }, void 0, false, {
             fileName: "[project]/components/Modal/Modal.tsx",
-            lineNumber: 73,
+            lineNumber: 132,
             columnNumber: 23
-        }, ("TURBOPACK compile-time value", void 0)), document.getElementById("modal"));
-        $[8] = handleBackdropClick;
+        }, ("TURBOPACK compile-time value", void 0)), document.body);
+        $[8] = t3;
         $[9] = t4;
         $[10] = t5;
     } else {
@@ -821,7 +874,7 @@ const Modal = (t0)=>{
     }
     return t5;
 };
-_s(Modal, "OD7bBpZva5O2jO+Puf00hKivP7c=");
+_s(Modal, "LrrVfNW3d1raFE0BNzCTILYmIfo=");
 _c = Modal;
 const __TURBOPACK__default__export__ = Modal;
 var _c;
