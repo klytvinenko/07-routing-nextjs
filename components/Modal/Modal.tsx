@@ -42,7 +42,6 @@ const Modal = ({ onClose,children }: ModalProps) => {
     >
       <div className={css.modal}>
         {children}
-        {/* <NoteForm onClose={onClose} /> */}
       </div>
     </div>,
     document.getElementById("modal")!

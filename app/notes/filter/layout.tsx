@@ -5,7 +5,7 @@ type FilterLayoutProps = {
 
 export default function Layout({ children, sidebar }: FilterLayoutProps) {
   return (
-  <section >
+  <section>
       <aside >
         {sidebar}
       </aside>
